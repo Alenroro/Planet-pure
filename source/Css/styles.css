@@ -257,6 +257,41 @@ h2 {
 .learn-btn:hover {
   background-color: #2daacb; /* No hover effect */
 }
+/* marquee  */
+
+    .marquee {
+      background-color: #2daacb;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 55px 0;
+    }
+
+    .marquee-content {
+      display: inline-flex;
+      animation: scroll 20s linear infinite;
+      font-family: "Adlam Display", sans-serif !important;
+      font-size: 50px;
+      /* color: white; */
+      -webkit-text-stroke: 2px white;
+        color: transparent;
+    }
+
+    .marquee-content span,
+    .marquee-content .icon {
+      margin-right: 30px;
+    }
+
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-30%); }
+    }
+
+    /* CSS-based seamless duplication */
+    .marquee-content::after {
+      content: attr(data-text);
+      display: inline-block;
+      margin-left: 50px;
+    }
 
 /* Why choose us section  */
 
