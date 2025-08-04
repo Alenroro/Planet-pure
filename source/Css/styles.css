@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
 }
 
 :root {
@@ -17,40 +18,36 @@ body {
   background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  border: none !important;
 }
 
 h1 {
   font-family: "Dela Gothic One", sans-serif;
 }
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Adlam Display", sans-serif;
+h2 {
+  font-family: "Adlam Display", sans-serif !important;
+  font-size: 35px;
 }
-
 .main {
   width: 100%;
   max-width: 100vw;
   margin: 0 auto;
 }
+/* navbar */
 nav {
   width: 80%;
   margin: auto;
   margin-top: 20px;
-  border-radius: 19px;
-  background-color: yellow !important;
-}
-nav .container-fluid {
-  margin: 10px auto;
+  border-radius: 10px;
+  background-color: white !important;
 }
 
 .container-fluid {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg) !important;
+  background-color: white;
+  margin: 10px auto;
 }
 .collapse ul {
   margin: auto;
@@ -63,6 +60,17 @@ nav .container-fluid {
   font-size: 15px;
   font-style: normal;
 }
+.collapse .btn {
+  background-color: var(--primary) !important;
+  border-radius: 43.5px !important;
+  color: var(--bg);
+}
+.collapse .btn:hover {
+  background-color: var(--bg) !important;
+  color: var(--primary);
+}
+
+/* carousal */
 .carousel-item img {
   object-fit: cover;
   height: 100vh;
@@ -84,6 +92,7 @@ nav .container-fluid {
   padding: 0 15px;
 }
 .carousel-caption h1 {
+  margin-top: 30px;
   font-family: "Dela Gothic One", sans-serif;
   font-size: 45px !important;
 }
@@ -91,9 +100,9 @@ nav .container-fluid {
 .carousel-caption p {
   font-family: "Adlam Display", sans-serif;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
-.btn-accent {
+.btn-hero {
   background-color: #f3f4f4 !important;
   color: var(--primary) !important;
   border: none;
@@ -103,23 +112,19 @@ nav .container-fluid {
   font-weight: 600 !important;
   font-family: "Adlam Display", sans-serif !important;
   padding: 5px 30px !important;
+  margin-top: 20px;
 }
 
-.btn-accent:hover {
+.btn-hero:hover {
   background-color: var(--primary) !important;
   color: var(--bg) !important    ;
 }
 
+/* who are we  */
 h2 {
   font-family: "Dela Gothic One", sans-serif;
   color: #2daacb !important;
   margin-bottom: 10px;
-}
-
-h3 {
-  font-family: "Adlam Display", sans-serif;
-  color: #2daacb !important;
-  margin-bottom: 8px;
 }
 
 .who-section {
@@ -129,9 +134,10 @@ h3 {
   align-items: center;
   background: #fff;
 }
-
+.who-image {
+  width: 50%;
+}
 .who-image img {
-  width: 300px;
   max-width: 100%;
   border-radius: 10px;
 }
@@ -142,17 +148,23 @@ h3 {
   min-width: 300px;
 }
 .who-content p {
-  font-size: 25px;
+  font-size: 22px;
+  text-align: justify;
 }
+/* about us  */
 .about-section {
-  background: #c0e2f4;
+  background: #c2f3ff;
   padding: 60px 10%;
   text-align: center;
   border-radius: 0px 0px 30px 30px;
   margin: 40px auto;
   /* width: 95%; */
 }
-
+.who-content h2,
+.about-section h2 {
+  font-family: "Adlam Display", sans-serif !important;
+  font-size: 35px;
+}
 .about-desc {
   max-width: 800px;
   margin: 20px auto;
@@ -165,13 +177,26 @@ h3 {
   gap: 20px;
   margin-top: 40px;
 }
+.column-layout {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
 
+.row-layout {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 .card {
   background: #fff;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card .icon {
   font-size: 28px;
@@ -185,29 +210,428 @@ h3 {
   overflow: hidden;
   background-color: transparent !important;
   border: none !important;
+  border-radius: 15px !important;
+  background: url(../images/home/aboutus.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .image-card img {
   width: 100%;
-  height: auto;
+  height: 410px;
   display: block;
   border-radius: 15px 15px 0 0;
 }
 .text-card {
   border-radius: 15px !important;
 }
+.text-card h3 {
+  font-size: 24px;
+  font-family: "Dela Gothic One", sans-serif;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+.text-card p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.text-card ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
 .learn-btn {
   display: block;
   background-color: #2daacb;
   color: white;
   text-align: center;
-  padding: 12px;
+  padding: 18px;
   font-weight: bold;
   border-radius: 0 0 15px 15px;
   text-decoration: none;
   transition: none;
+  width: 100%;
 }
 
 .learn-btn:hover {
   background-color: #2daacb; /* No hover effect */
+}
+
+/* Why choose us section  */
+
+.why-choose-section {
+  background-color: #c0e2f4;
+  padding: 60px 5%;
+  border-radius: 30px;
+  margin: 60px auto;
+  font-family: "Alata", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-choose-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 88%;
+}
+
+.left-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  /* border: 1px solid; */
+}
+
+.right-content {
+  flex: 1;
+  text-align: center !important;
+  /* border: 1px solid; */
+}
+
+.right-content h2 {
+  font-size: 42px;
+  color: #2daacb;
+  margin-bottom: 20px;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.right-content img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.info-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card strong {
+  font-weight: 700;
+  font-family: "Adlam Display", sans-serif;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+  border-radius: 10px !important;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-btn {
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.accordion-btn:hover {
+  background-color: #e6f7ff;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.accordion-content {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px; /* set based on your expected content size */
+  padding: 15px 20px;
+}
+
+/* service */
+
+.services-section {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.services-title h2 {
+  font-family: "Adlam Display", sans-serif !important;
+  font-size: 35px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  color: var(--text) !important;
+}
+
+.highlight-blue {
+  color: var(--primary);
+}
+
+.highlight-green {
+  color: #28a745;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  max-width: 300px;
+  flex: 1 1 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.service-card p {
+  font-family: "Alata", sans-serif;
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0px 10px;
+}
+
+.service-link {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #007bff;
+  text-decoration: none;
+  margin: 10px;
+  font-family: "Alata", sans-serif;
+}
+
+.service-middle img {
+  max-width: 340px;
+}
+
+/* contact */
+
+.contact-section {
+  position: relative;
+  background: url("../images/home/contact-bg.jpg") no-repeat center center/cover;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 60px 40px;
+  margin: 50px auto;
+  max-width: 1080px;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.394); /* 30% black overlay */
+  z-index: 1;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-text h2 {
+  color: #ffffff !important;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.contact-text h4 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.contact-text p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.working-hours p {
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 320px;
+  color: white !important;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-grid input,
+.form-grid textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 8px 0;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+
+.form-grid input::placeholder,
+.form-grid textarea::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+.checkbox {
+  color: white;
+}
+
+.checkbox input[type="checkbox"] {
+  accent-color: white;
+}
+
+.form-grid textarea {
+  grid-column: span 2;
+  resize: none;
+  height: 100px;
+  color: #ffffff;
+}
+
+.checkbox {
+  margin: 20px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.submit-btn {
+  padding: 5px 25px;
+  border: none;
+  background-color: #ffffff;
+  color: var(--text);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* footer  */
+
+.footer-section {
+  background: url("../images/home/footer.jpeg") no-repeat center center/cover;
+  position: relative;
+  color: white;
+}
+
+.footer-overlay {
+  background-color: #2da9cbcd; /* 30% opacity black overlay */
+  padding: 40px 20px 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 170px;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 230px;
+}
+.footer-desc {
+  font-size: 15px;
+}
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
 }
