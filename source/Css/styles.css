@@ -40,7 +40,7 @@ h2 {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366;
+  background-color: #25d366;
   color: white;
   font-size: 28px;
   padding: 10px 20px;
@@ -1165,7 +1165,6 @@ h2 {
   padding: 0 20px;
   z-index: 2;
   margin-top: 120px;
-
 }
 
 .industry-hero-content h1 {
@@ -1188,7 +1187,7 @@ h2 {
   justify-content: center;
   padding: 30px;
 }
-.services-tags a{
+.services-tags a {
   text-decoration: none;
   margin: 10px 0px;
 }
@@ -1221,7 +1220,8 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 1090px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .sub-service-cnt,
@@ -1237,7 +1237,6 @@ h2 {
   width: 100%;
   border-radius: 15px;
 }
-
 
 /* marine section  */
 
@@ -1289,10 +1288,10 @@ h2 {
   gap: 10px;
   justify-content: center;
   padding: 30px;
- margin: auto;
+  margin: auto;
   width: 90% !important;
 }
-.marine-services-tags a{
+.marine-services-tags a {
   text-decoration: none;
   margin: 10px 0px;
 }
@@ -1318,4 +1317,63 @@ h2 {
   flex-direction: column;
   gap: 50px;
   padding: 50px 0px;
+}
+
+/* responsivensssss */
+
+@media (max-width: 576px) {
+  /* contact us page  */
+  .contact-hero {
+    height: 300px;
+    background-repeat: no-repeat;
+  }
+  .center-image {
+    display: none;
+  }
+  .contact-section {
+    padding: 30px 20px;
+    border-radius: 30px;
+  }
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+  .contact-section h4 {
+    font-size: 1.2rem;
+  }
+  .contact-section p {
+    font-size: medium;
+    width: 95%;
+  }
+  .contact-form {
+    min-width: 260px;
+  }
+
+  .form-grid input,
+  .form-grid textarea {
+    font-size: 12px;
+  }
+
+  .form-grid {
+    gap: 8px;
+  }
+
+  .reach-us p {
+    font-size: 12px;
+  }
+
+  /* footer section  */
+
+  .footer-container {
+    gap: 30px;
+  }
+
+  /* about us */
+  .mission-vision {
+    padding: 0;
+    gap: 30px;
+
+  }
+  .approvals img {
+    width: 80px;
+  }
 }
