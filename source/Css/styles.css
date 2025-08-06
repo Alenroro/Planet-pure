@@ -93,9 +93,14 @@ nav {
 .collapse .btn:hover {
   background-color: var(--bg) !important;
   color: var(--primary);
+  border: 1px solid var(--primary) !important;
 }
 
 /* carousal */
+.hero-section {
+  height: 100vh;
+  width: 100vw;
+}
 .carousel-item img {
   object-fit: cover;
   height: 100vh;
@@ -134,15 +139,16 @@ nav {
   transition: none !important;
   border-radius: 43.5px !important;
   font-size: 15px !important;
-  font-weight: 600 !important;
   font-family: "Adlam Display", sans-serif !important;
   padding: 5px 30px !important;
   margin-top: 20px;
+
 }
 
 .btn-hero:hover {
   background-color: var(--primary) !important;
-  color: var(--bg) !important    ;
+  color: var(--bg) !important;
+
 }
 
 /* who are we  */
@@ -154,28 +160,28 @@ h2 {
 
 .who-section {
   display: flex;
-  flex-wrap: wrap;
   padding: 40px 10%;
   align-items: center;
-  background: #fff;
+  justify-content: center;
+  width: 100vw;
 }
 .who-image {
   width: 50%;
 }
 .who-image img {
   max-width: 100%;
-  border-radius: 10px;
 }
 
 .who-content {
   flex: 1;
   margin-left: 40px;
-  min-width: 300px;
+  min-width: 50%;
 }
 .who-content p {
   font-size: 22px;
   text-align: justify;
 }
+
 /* about us  */
 .about-section {
   background: #c2f3ff;
@@ -205,7 +211,7 @@ h2 {
 .column-layout {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 100%;
 }
 
 .row-layout {
@@ -236,9 +242,6 @@ h2 {
   background-color: transparent !important;
   border: none !important;
   border-radius: 15px !important;
-  background: url(../images/home/aboutus.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .image-card img {
@@ -345,8 +348,6 @@ h2 {
 
 .left-content {
   flex: 1;
-  min-width: 300px;
-  max-width: 500px;
 }
 
 .right-content {
@@ -360,7 +361,6 @@ h2 {
   margin-bottom: 20px;
   margin: auto;
   text-align: center;
-  width: 50%;
 }
 
 .right-content img {
@@ -650,14 +650,15 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 170px;
-  max-width: 1080px;
+  gap: 45px;
+  max-width: 80%;
   margin: auto;
 }
 
 .footer-column {
   flex: 1;
-  min-width: 230px;
+  min-width: 30%;
+  /* border: 1px solid; */
 }
 .footer-desc {
   font-size: 15px;
@@ -1219,7 +1220,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1090px;
+  width: 80%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -1238,7 +1239,7 @@ h2 {
   border-radius: 15px;
 }
 
-/* marine section  */
+/* marine page  */
 
 .marine-hero-section {
   position: relative;
@@ -1322,6 +1323,32 @@ h2 {
 /* responsivensssss */
 
 @media (max-width: 576px) {
+  /* carousal  */
+  .carousel-caption h1 {
+    font-size: 29px !important;
+    margin-top: 30px;
+  }
+  .carousel-caption p {
+    font-size: 14px;
+  }
+
+  /* who are we */
+  .who-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .who-image img {
+    width: 100%;
+    height: auto;
+  }
+  .who-content h2 {
+    margin: 20px auto;
+  }
+  .who-content p {
+    font-size: 18px;
+  }
+
   /* contact us page  */
   .contact-hero {
     height: 300px;
@@ -1332,7 +1359,7 @@ h2 {
   }
   .contact-section {
     padding: 30px 20px;
-    border-radius: 30px;
+    border-radius: 15px;
   }
   .contact-section h2 {
     font-size: 2rem;
@@ -1366,14 +1393,103 @@ h2 {
   .footer-container {
     gap: 30px;
   }
+  .footer-column {
+    min-width: 100%;
+  }
 
-  /* about us */
+  /* about us page */
   .mission-vision {
     padding: 0;
     gap: 30px;
-
   }
   .approvals img {
     width: 80px;
+  }
+
+  /* who are we  */
+
+  .who-content {
+    margin: auto;
+    min-width: 100%;
+  }
+  .who-section {
+    padding: 20px 5px;
+    flex-wrap: wrap;
+  }
+  .who-image {
+    width: 100%;
+  }
+
+  /* about us section  */
+  .image-card img {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* who are we  */
+
+  .why-choose-container {
+    flex-direction: column-reverse;
+  }
+  .left-content {
+    max-width: 300px;
+    margin-top: 30px;
+  }
+
+  /* service section  */
+  .services-title h2 {
+    font-size: 25px;
+  }
+  .service-middle {
+    display: none;
+  }
+
+  /* marine and industrial page  */
+  .marine-hero-content {
+    margin-bottom: 50px;
+  }
+
+  .marine-hero-content h1,
+  .industry-hero-content h1 {
+    font-size: 2rem;
+  }
+  .marine-services-tags,
+  .services-tags {
+    padding: 0;
+  }
+  .marine-services-tags span {
+    padding: 5px;
+  }
+  #hazardous-waste,
+  #liquid-waste,
+  #waste-segregation {
+    flex-direction: column-reverse;
+  }
+  #tank-cleaning,
+  #iso-tank-cleaning {
+    flex-direction: column;
+  }
+  .sub-service-cnt,
+  .sub-service-img {
+    width: 100%;
+    padding: 15px;
+  }
+  .industry-hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .industry-hero-content {
+    margin-bottom: 50px;
+  }
+  .services-tags span {
+    font-size: 7px;
+  }
+
+  /* whatsapp button  */
+  .whatsapp-float {
+    padding: 5px 13px;
+    font-size: 24px;
+    bottom: 10px;
+    right: 10px;
   }
 }
