@@ -89,6 +89,8 @@ nav {
   background-color: var(--primary) !important;
   border-radius: 43.5px !important;
   color: var(--bg);
+  font-family: 'alata';
+
 }
 .collapse .btn:hover {
   background-color: var(--bg) !important;
@@ -185,9 +187,9 @@ h2 {
   background: #c2f3ff;
   padding: 60px 10%;
   text-align: center;
-  border-radius: 0px 0px 30px 30px;
+  border-radius: 30px 30px 30px 30px;
   margin: 60px auto;
-  /* width: 95%; */
+  width: 90%;
 }
 .who-content h2,
 .about-section h2 {
@@ -237,9 +239,10 @@ h2 {
 }
 
 .image-card {
+ position: relative;
+  border: none;
+  background: none;
   padding: 0;
-  position: relative;
-  overflow: hidden;
   background-color: transparent !important;
   border: none !important;
   border-radius: 15px !important;
@@ -247,9 +250,10 @@ h2 {
 
 .image-card img {
   width: 100%;
-  height: 410px;
+  height: 490px;
+  object-fit: cover;
   display: block;
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px;
 }
 .text-card {
   border-radius: 15px !important;
@@ -271,20 +275,24 @@ h2 {
   color: var(--text);
 }
 .learn-btn {
-  display: block;
-  background-color: #2daacb;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary);
   color: white;
-  text-align: center;
-  padding: 18px;
-  font-weight: bold;
-  border-radius: 0 0 15px 15px;
+  font-family: 'alata';
+  padding: 6px 30px;
+  border-radius: 50px; 
   text-decoration: none;
-  transition: none;
-  width: 100%;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 
 .learn-btn:hover {
-  background-color: #2daacb; /* No hover effect */
+  background-color: #20829d; /* same color to keep hover effect minimal */
 }
 
 .certification2 {
@@ -331,7 +339,6 @@ h2 {
 }
 
 /* Why choose us section  */
-
 .why-choose-section {
   background-color: #c0e2f4;
   padding: 60px 5%;
@@ -339,25 +346,32 @@ h2 {
   margin: 60px auto;
   font-family: "Alata", sans-serif;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: stretch; /* this is important */
+  height: 110vh;
+  width: 90%;
+  box-sizing: border-box;
 }
 
 .why-choose-container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 88%;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
 }
 
 .left-content {
   flex: 1;
+  overflow-y: auto; /* scrolls only this part if accordion expands */
+  max-height: 100%;
 }
 
 .right-content {
   flex: 1;
-  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .right-content h2 {
@@ -371,8 +385,11 @@ h2 {
 .right-content img {
   width: 100%;
   max-width: 400px;
-}
 
+}
+.first-accordian{
+  margin-top: 75px;
+}
 .info-card {
   background-color: #fff;
   padding: 20px;
@@ -464,6 +481,9 @@ h2 {
   gap: 30px;
   justify-content: center;
   align-items: center;
+  a{
+    text-decoration: none;
+  }
 }
 
 .service-card {
@@ -489,6 +509,8 @@ h2 {
   font-size: 1.3rem;
   margin: 10px 0;
   font-weight: 600;
+  font-family: "Alata", sans-serif;
+
 }
 
 .service-card p {
@@ -508,7 +530,7 @@ h2 {
 }
 
 .service-middle img {
-  max-width: 340px;
+  max-width: 330px;
 }
 
 /* contact */
