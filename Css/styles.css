@@ -1585,9 +1585,6 @@ h2 {
   .footer-container {
     gap: 15px;
   }
-  .footer-column {
-    /* border: 1px solid; */
-  }
   .footer-links {
     h4 {
       text-align: center;
