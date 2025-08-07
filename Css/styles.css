@@ -752,7 +752,7 @@ h2 {
 }
 
 .about-container {
-  max-width: 1090px;
+  max-width: 980px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
