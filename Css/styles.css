@@ -8,7 +8,7 @@
 }
 
 :root {
-  --primary: #2daacb;
+  --primary: #0E678D;
   --secondary: #f4c341;
   --accent: #89a756;
   --bg: #f3f4f4;
@@ -64,7 +64,7 @@ nav {
   margin-top: 20px;
   border-radius: 10px;
   background-color: white !important;
-  /* border: 1px solid; */
+  border: 1px solid;
 }
 
 .container-fluid {
@@ -154,7 +154,7 @@ nav {
 /* who are we  */
 h2 {
   font-family: "Dela Gothic One", sans-serif;
-  color: #2daacb !important;
+  color: #0E678D !important;
   margin-bottom: 10px;
 }
 
@@ -234,7 +234,7 @@ h2 {
 }
 .card .icon {
   font-size: 28px;
-  color: var(--primary, #2daacb);
+  color: var(--primary, #0E678D);
   margin-bottom: 10px;
 }
 
@@ -301,7 +301,7 @@ h2 {
 /* marquee  */
 
 .marquee {
-  background-color: #2daacb;
+  background-color: #0E678D;
   overflow: hidden;
   white-space: nowrap;
   padding: 55px 0;
@@ -376,7 +376,7 @@ h2 {
 
 .right-content h2 {
   font-size: 42px;
-  color: #2daacb;
+  color: #0E678D;
   margin-bottom: 20px;
   margin: auto;
   text-align: center;
@@ -510,7 +510,7 @@ h2 {
   margin: 10px 0;
   font-weight: 600;
   font-family: "Alata", sans-serif;
-
+color: var(--primary);
 }
 
 .service-card p {
@@ -669,7 +669,7 @@ h2 {
 }
 
 .footer-overlay {
-  background-color: #2da9cbcd; /* 30% opacity black overlay */
+  background-color: #0e678dc2; /* 30% opacity black overlay */
   padding: 40px 20px 10px;
 }
 
@@ -774,7 +774,7 @@ h2 {
 }
 
 .about-container {
-  max-width: 980px;
+  max-width: 1090px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -797,7 +797,7 @@ h2 {
 }
 
 .about-text h2 {
-  color: #2daacb;
+  color: #0E678D;
   font-family: "Adlam Display", sans-serif;
   font-size: 3rem;
   margin-bottom: 15px;
@@ -828,8 +828,8 @@ h2 {
 .abouts-card {
   background: white;
   border-radius: 16px;
-  padding: 25px;
-  width: 300px;
+  padding: 30px;
+  width: 340px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
   transition: transform 0.3s ease;
@@ -842,7 +842,7 @@ h2 {
 .abouts-card .icon {
   font-size: 30px;
   margin-bottom: 10px;
-  color: #2daacb;
+  color: #0E678D;
 }
 
 .abouts-card h3 {
