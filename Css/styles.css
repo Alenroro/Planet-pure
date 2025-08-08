@@ -64,7 +64,7 @@ nav {
   margin-top: 20px;
   border-radius: 10px;
   background-color: white !important;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .container-fluid {
@@ -125,12 +125,13 @@ nav {
 .carousel-caption h1 {
   margin-top: 30px;
   font-family: "Dela Gothic One", sans-serif;
-  font-size: 45px !important;
+  font-size: 98px ;
 }
 
 .carousel-caption p {
-  font-family: "Adlam Display", sans-serif;
+  font-family: "alata";
   font-size: 20px;
+  font-weight: medium;
   margin-top: 20px;
 }
 .btn-hero {
@@ -139,7 +140,7 @@ nav {
   border: none;
   transition: none !important;
   border-radius: 43.5px !important;
-  font-size: 15px !important;
+  font-size: 24px !important;
   font-family: "Adlam Display", sans-serif !important;
   padding: 5px 30px !important;
   margin-top: 20px;
@@ -275,16 +276,16 @@ h2 {
 }
 .learn-btn {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--primary);
   color: white;
   font-family: "alata";
-  padding: 6px 30px;
+  padding: 10px 40px;
   border-radius: 50px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: background-color 0.3s ease;
   white-space: nowrap;
@@ -522,7 +523,7 @@ h2 {
 .service-link {
   font-weight: bold;
   font-size: 0.95rem;
-  color: #007bff;
+  color: #00415C;
   text-decoration: none;
   margin: 10px;
   font-family: "Alata", sans-serif;
@@ -541,8 +542,9 @@ h2 {
   border-radius: 20px;
   overflow: hidden;
   padding: 60px 40px;
-  margin: 50px auto;
-  max-width: 1080px;
+  margin: 0 20px 20px 20px;
+  /* margin: 60px ; */
+  /* max-width: auto; */
   color: #fff;
 }
 
@@ -564,7 +566,11 @@ h2 {
 
 .contact-text {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   min-width: 300px;
+  /* line-height: 20px; */
 }
 
 .contact-text h2 {
@@ -579,10 +585,13 @@ h2 {
 }
 
 .contact-text p {
-  font-size: 1.4rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  margin-top: 40px;
   max-width: 500px;
-  line-height: 1.6;
+  line-height: 2;
+  font-family: "alata";
+  font-weight: 200;
 }
 
 .working-hours p {
@@ -590,7 +599,7 @@ h2 {
   margin-top: 5px;
   margin-bottom: 8px;
 }
-
+/* 
 .contact-form {
   flex: 1;
   min-width: 320px;
@@ -658,7 +667,86 @@ h2 {
 .submit-btn:hover {
   background-color: var(--primary);
   color: white;
+} */
+
+
+.contact-form {
+  flex: 1;
+  min-width: 320px;
+  color: white;
+  font-family: sans-serif;
 }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 6px 0;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.textarea-full {
+  grid-column: span 2;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.checkbox {
+  margin: 20px 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.checkbox input[type="checkbox"] {
+  accent-color: white;
+}
+
+.submit-btn {
+  padding: 10px 30px;
+  border: none;
+  background-color: #ffffff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
 
 /* footer  */
 
@@ -731,7 +819,7 @@ h2 {
   background-image: url("../images/about/about-us-main.jpeg"); /* Replace with your background */
   background-size: cover;
   background-position: center;
-  height: 450px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -829,7 +917,7 @@ h2 {
   background: white;
   border-radius: 16px;
   padding: 30px;
-  width: 340px;
+  width: 420px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
   transition: transform 0.3s ease;
@@ -870,7 +958,7 @@ h2 {
 }
 
 .approval-transport h2 {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   font-size: 3rem !important;
 }
 
@@ -883,7 +971,7 @@ h2 {
 }
 
 .approvals img {
-  width: 150px;
+  width: 200px;
   height: auto;
   object-fit: contain;
   background-color: #fff;
@@ -1005,7 +1093,7 @@ h2 {
   background-image: url("../images/contact/contact-main.jpg");
   background-size: contain;
   /* background-position: center; */
-  height: 450px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1049,7 +1137,7 @@ h2 {
 }
 .reach-us-grid {
   display: grid;
-  grid-template-columns: 1fr 200px 1fr;
+  grid-template-columns: 1fr 400px 1fr;
   grid-template-rows: auto auto;
   gap: 20px;
   align-items: center;
@@ -1059,10 +1147,10 @@ h2 {
 .reach-card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 10px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   padding: 20px;
-  width: 270px;
+  width: 350px;
   text-align: center;
 }
 
@@ -1237,10 +1325,13 @@ h2 {
 
 .sub-service-card {
   border-radius: 15px;
+  background-color: rgba(13, 207, 255, 0.05); /* 5% opacity */
+
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
+  height: 400px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -1393,7 +1484,7 @@ h2 {
   .contact-section {
     padding: 30px 20px;
     border-radius: 15px;
-    width: 90% !important;
+    width: 100% ;
   }
   .contact-section h2 {
     font-size: 2rem;
@@ -1456,8 +1547,10 @@ h2 {
   }
   .certification2 {
     ul {
-      padding: 0% !important;
-    }
+      /* list-style: none; */
+      text-align: start;
+      padding: 0% ;
+      margin-left: 20px;    }
   }
   /* why choose us */
 
@@ -1549,11 +1642,11 @@ h2 {
     display: block !important;
     text-align: center;
     ul {
-      list-style-type: none;
-      /* text-align: center; */
+      /* list-style-type: none; */
+      text-align: start;
       /* border: 1px solid; */
       /* width: 70%; */
-      /* margin: auto; */
+      margin-left: 20px;
     }
   }
 
@@ -1646,11 +1739,11 @@ h2 {
     display: block !important;
     text-align: center;
     ul {
-      list-style-type: none;
+      /* list-style-type: none; */
       /* text-align: center; */
       /* border: 1px solid; */
       /* width: 70%; */
-      /* margin: auto; */
+      margin-left: 20px;
     }
   }
   /* service section  */
@@ -1661,6 +1754,18 @@ h2 {
     gap: 105px;
   }
   .contact-section {
+    width: 90%;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .contact-section {
+    margin: 80px;
+  }
+
+  .who-content p{
+    /* padding: 20px; */
     width: 80%;
   }
 }
