@@ -1366,6 +1366,21 @@ h2 {
   width: 100%;
   border-radius: 15px;
 }
+.sub-service-img .carousel,
+.sub-service-img .carousel-inner,
+.sub-service-img .carousel-item {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.sub-service-img .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
 
 /* marine page  */
 
