@@ -1452,10 +1452,11 @@ h2 {
     width: 100%;
     height: 300px;
   }
-    .certification2 {
-        ul {
-          padding: 0% !important;
-        }}
+  .certification2 {
+    ul {
+      padding: 0% !important;
+    }
+  }
   /* why choose us */
 
   .why-choose-container {
