@@ -97,6 +97,21 @@ nav {
   border: 1px solid var(--primary) !important;
 }
 
+.dropdown-menu {
+  border-radius: 8px !important;
+  border: none;
+  padding: 6px !important;
+
+  li {
+    margin: 0 !important;
+  }
+
+  a:hover {
+    background-color: var(--primary);
+    color: var(--bg);
+    border-radius: 5px !important;
+  }
+}
 /* carousal */
 .hero-section {
   height: 100vh;
